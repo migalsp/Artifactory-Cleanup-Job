@@ -12,7 +12,7 @@ with open('results.json') as json_file:
 # create log file
 sys.stdout = open('DeletedArtifacts.txt', 'w')
 
-#delete artifacts
+# delete artifacts
 for i in content_file:
     print(i["uri"])
     print(requests.delete(i["uri"], auth=requests.auth.HTTPBasicAuth(user, passwd)))
