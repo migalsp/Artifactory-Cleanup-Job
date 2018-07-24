@@ -10,7 +10,7 @@ with open('results.json') as json_file:
     content_file = json.load(json_file)
 
 # create log file
-sys.stdout = open('DeletedArtifacts.txt'', 'w')
+sys.stdout = open('DeletedArtifacts.txt', 'w')
 
 #delete artifacts
 for i in content_file:
